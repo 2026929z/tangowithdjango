@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-
-{% load staticfiles %} 
-
-<html>
-
-    <head>
-        <title>me</title>
-    </head>
-
-    <body>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}About{% endblock %}
+{% block body_block %}
         <h1>I say...</h1>
         that's me! <strong>{{ boldmessage }}</strong><br />
         <a href="/rango/">Index</a><br />
         <img src="{% static "images/me.jpg" %}" alt="Picture of me" /> 
-    </body>
-
-</html>
+{%endblock%}
