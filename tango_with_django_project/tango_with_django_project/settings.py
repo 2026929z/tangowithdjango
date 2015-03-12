@@ -39,6 +39,7 @@ TEMPLATE_DIRS = [
     TEMPLATE_PATH,]
 
 INSTALLED_APPS = (
+	'bootstrap_toolkit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
